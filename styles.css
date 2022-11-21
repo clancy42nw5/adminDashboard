@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+* {
+    border: 1px solid blue;
+}
+
+body, .sidebar, .sidebarContent, .mainContent, .header, .headerTop, .headerBottom, .dashContent, .contentLeft, .contentRight, .announceCont, .announcement, .trendingCont {
+    display: grid;
+}
+
+body {
+    border: 5px solid red;
+    grid-template-columns: 200px 900px;
+    grid-template-rows: 750px;
+}
+
+.sidebar {
+    border: 5px solid yellow;
+    grid-template-rows: 100px 500px;
+}
+
+.sidebarContent {
+    border: 5px solid green;
+    grid-template-columns: 1rem 1rem;
+    gap: 25px;
+}
+
+.mainContent {
+    border: 5px solid brown;
+    grid-template-rows: 150px 600px;
+}
+
+.header {
+    border: 5px solid teal;
+    grid-template-columns: 700px;
+    grid-template-rows: 75px 75px;
+}
+
+.headerTop {
+    border: 5px solid orange;
+    grid-template-columns: 150px 150px 150px;
+}
+
+.headerBottom {
+    border: 5px solid purple;
+    grid-template-columns: repeat(3, 150px);
+}
+
+.headerButtons {
+    display: flex;
+    border: 5px solid magenta;
+    grid-template-columns: repeat(3, 50px);
+}
+
+.dashContent {
+    border: 5px solid yellow;
+    grid-template-columns: 600px 200px;
+    grid-template-rows: 50px 550px;
+}
+
+.contentLeft {
+    border: 5px solid green;
+    grid-template-columns: 250px 250px;
+    grid-template-rows: repeat(3, 175px);
+}
+
+.projectsCont {
+    border: 5px solid orange;
+    grid-template-rows: 20px 100px 20px;
+}
+
+.contentRight {
+    border: 5px solid blue;
+    grid-template-rows: 300px 60px 150px;
+}
+
+.announceCont {
+    border: 5px solid red;
+    grid-template-rows: repeat(3, 100px);
+}
+
+.accouncement {
+    border: 5px solid orange;
+    grid-template-rows: repeat(2, 100px);
+}
+
+.trendingCont {
+    border: 5px solid green;
+    grid-template-columns: 50px 150px;
+}
