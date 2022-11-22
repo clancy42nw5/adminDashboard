@@ -8,136 +8,73 @@
     <title>Admin Dashboard</title>
 </head>
 <body>
-    <div class="sidebar">
-        <div class="sidebarHeader">
-            <text>X - Dashboard</text>
+    <div class="sideBar">
+        <img  src="svg/dashboard.svg" alt="Dashboard Icon" class="sidebarSVG">
+        <div class="sidebarText">Dashboard</div>
+        <div class="blankDivOne"></div>
+        <img src="SVG/home.svg" alt="Home Icon" class="sidebarSVG">
+        <div class="sidebarText">Home</div>
+        <img src="SVG/profile.svg" alt="Profile Icon" class="sidebarSVG">
+        <div class="sidebarText">Profile</div>
+        <img src="SVG/message.svg" alt="Messages icon" class="sidebarSVG">
+        <div class="sidebarText">Messages</div>
+        <img src="SVG/history.svg" alt="History Icon" class="sidebarSVG">
+        <div class="sidebarText">History</div>
+        <img src="SVG/task.svg" alt="Tasks Icon" class="sidebarSVG">
+        <div class="sidebarText">Tasks</div>
+        <img src="SVG/community.svg" alt="Communities Icon" class="sidebarSVG">
+        <div class="sidebarText">Communities</div>
+        <div class="blankDivTwo"></div>
+        <img src="svg/settings.svg" alt="Settings Icon" class="sidebarSVG">
+        <div class="sidebarText">Settings</div>
+        <img src="svg/support.svg" alt="Support Icon" class="sidebarSVG">
+        <div class="sidebarText">Support</div>
+        <img src="svg/privacy.svg" alt="Privacy icon" class="sidebarSVG">
+        <div class="sidebarText">Privacy</div>
+    </div>
+    <div class="header">
+        <button id="searchButton">
+            <img src="svg/search.svg" alt="Search Icon" class="searchButton">
+        </button>
+        <form class="searchBar">
+            <input type="search" id="searchBar" name="q">
+        </form>
+        <img src="svg/bell.svg" alt="Bell Icon" class="notify">
+        <img src="Clancy-Carraway.jpg" alt="Profile Image" class="smallProfilePhoto">
+        <div class="activeProfileName"><strong>Clancy Wilson</strong></div>
+        <div class="profileContainer">
+            <img src="Clancy-Carraway.jpg" alt="Profile Image" class="largeProfilePhoto">
+            <div class="greeting">Hi there,</div>
+            <div class="profileGreeting">Clancy Wilson (@Clancy)</div>
         </div>
-        <div class="sidebarContent">
-            <div class="sidebarIcons">
-                <div class="sbIcon">X</div>
-                <div class="sbIcon">X</div>
-                <div class="sbIcon">X</div>
-                <div class="sbIcon">X</div>
-                <div class="sbIcon">X</div>
-                <div class="sbIcon">X</div>
-                <div class="sbIcon">n/a</div>
-                <div class="sbIcon">X</div>
-                <div class="sbIcon">X</div>
-                <div class="sbIcon">X</div>
-            </div>
-            <div class="sidebarLinks">
-                <div class="sbLink">Home</div>
-                <div class="sbLink">Profile</div>
-                <div class="sbLink">Messages</div>
-                <div class="sbLink">History</div>
-                <div class="sbLink">Tasks</div>
-                <div class="sbLink">Communities</div>
-                <div class="sbLink">n/a</div>
-                <div class="sbLink">Settings</div>
-                <div class="sbLink">Support</div>
-                <div class="sbLink">Privacy</div>
-            </div>
+        <div class="headerButtonContainer">
+            <button class="headerButton">New</button>
+            <button class="headerButton">Upload</button>
+            <button class="headerButton">Share</button>
         </div>
     </div>
-    <div class="mainContent">
-        <div class="header">
-            <div class="headerTop">
-                <div class="searchBar">Searchbar</div>
-                <div class="alertIcon">X</div>
-                <div class="profileIcons">CAT Morgan Oakley</div>
-            </div>
-            <div class="headerBottom">
-                <div class="profileImage">CAT</div>
-                <div class="welcomeMessage">Hi there, Morgan Oakley (@morgan)</div>
-                <div class="headerButtons">
-                    <button class="topButtons">New</button>
-                    <button class="topButtons">Upload</button>
-                    <button class="topButtons">Share</button>
-                </div>
-            </div>
+    <div class="dashContent">
+        <div class="projectsTitle">Your Projects</div>
+        <div class="projectsContainer">
+            <div class="project"></div>
+            <div class="project"></div>
+            <div class="project"></div>
+            <div class="project"></div>
+            <div class="project"></div>
+            <div class="project"></div>
         </div>
-        <div class="dashContent">
-            <text>Your Projects</text>
-            <text>Announcements</text>
-            <div class="contentLeft">
-                <div class="projectsCont">
-                    <div class="projectsCopy">
-                        <text>Super Cool Project</text>
-                        <text>A truly amazing project that contains all kinds of stuff.</text>
-                    </div>
-                    <div class="projectsButtons">X X X</div>
-                </div>
-                <div class="projectsCont">
-                    <div class="projectsCopy">
-                        <text>Less Cool Project</text>
-                        <text>While not a bad project, it's just ok. It could be a lot better really.</text>
-                    </div>
-                    <div class="projectsButtons">X X X</div>
-                </div>
-                <div class="projectsCont">
-                    <div class="projectsCopy">
-                        <text>Impossible App</text>
-                        <text>You will never believe how this works!</text>
-                    </div>
-                    <div class="projectsButtons">X X X</div>
-                </div>
-                <div class="projectsCont">
-                    <div class="projectsCopy">
-                        <text>Easy Peasy App</text>
-                        <text>You can probably guess how this works.</text>
-                    </div>
-                    <div class="projectsButtons">X X X</div>
-                </div>
-                <div class="projectsCont">
-                    <div class="projectsCopy">
-                        <text>Ad Blocker</text>
-                        <text>It blocks ads without the server knowing!</text>
-                    </div>
-                    <div class="projectsButtons">X X X</div>
-                </div>
-                <div class="projectsCont">
-                    <div class="projectsCopy">
-                        <text>Money Maker</text>
-                        <text>Doesn't actually generate passive income. For that, get a job.</text>
-                    </div>
-                    <div class="projectsButtons">X X X</div>
-                </div>
-            </div>
-            <div class="contentRight">
-                <div class="announceCont">
-                    <div class="accouncement">
-                        <text>Site Maintenance</text>
-                        <text>From 1.12.22 to 2.12.22 the site will undergo maintenance.</text>
-                    </div>
-                    <div class="accouncement">
-                        <text>Community Share Day</text>
-                        <text>A day to share all progress.</text>
-                    </div>
-                    <div class="accouncement">
-                        <text>Updated Privacy Policy</text>
-                        <text>Click here to find out more.</text>
-                    </div>
-                </div>
-                <text>Trending</text>
-                <div class="trendingCont">
-                    <div class="trendingIcon">X</div>
-                    <div class="trendingUser">
-                        
-                    </div>
-                    <div class="trendingIcon">X</div>
-                    <div class="trendingUser">
-
-                    </div>
-                    <div class="trendingIcon">X</div>
-                    <div class="trendingUser">
-
-                    </div>
-                    <div class="trendingIcon">X</div>
-                    <div class="trendingUser">
-
-                    </div>
-                </div>
-            </div>
+        <div class="newsTitle">Announcements</div>
+        <div class="newsCont">
+            <div class="news"></div>
+            <div class="news"></div>
+            <div class="news"></div>
+        </div>
+        <div class="trendingTitle">Trending</div>
+        <div class="trending">
+            <div class="userTrending"></div>
+            <div class="userTrending"></div>
+            <div class="userTrending"></div>
+            <div class="userTrending"></div>
         </div>
     </div>
 </body>

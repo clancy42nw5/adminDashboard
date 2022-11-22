@@ -1,90 +1,236 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 
-* {
-    border: 1px solid blue;
+:root {
+    font-family: 'Roboto Slab', 'Roboto';
 }
 
-body, .sidebar, .sidebarContent, .mainContent, .header, .headerTop, .headerBottom, .dashContent, .contentLeft, .contentRight, .announceCont, .announcement, .trendingCont {
-    display: grid;
+* {
+    border: 0px solid grey;
 }
 
 body {
-    border: 5px solid red;
-    grid-template-columns: 200px 900px;
-    grid-template-rows: 750px;
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+    background-color: grey;
+    display: grid;
+    grid-template-columns: repeat(10, 100px);
+    grid-template-rows: repeat(8, 100px);
 }
 
-.sidebar {
-    border: 5px solid yellow;
-    grid-template-rows: 100px 500px;
-}
+/*
+All divs within the body
+*/
 
-.sidebarContent {
-    border: 5px solid green;
-    grid-template-columns: 1rem 1rem;
-    gap: 25px;
-}
-
-.mainContent {
-    border: 5px solid brown;
-    grid-template-rows: 150px 600px;
+.sideBar {
+    background-color: aliceblue;
+    grid-column: 1 / 3;
+    grid-row: 1 / 9;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(20, 1fr);
 }
 
 .header {
-    border: 5px solid teal;
-    grid-template-columns: 700px;
-    grid-template-rows: 75px 75px;
-}
-
-.headerTop {
-    border: 5px solid orange;
-    grid-template-columns: 150px 150px 150px;
-}
-
-.headerBottom {
-    border: 5px solid purple;
-    grid-template-columns: repeat(3, 150px);
-}
-
-.headerButtons {
-    display: flex;
-    border: 5px solid magenta;
-    grid-template-columns: repeat(3, 50px);
+    background-color: white;
+    grid-column: 3 / end;
+    grid-row: 1 / 3;
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(5, 1fr);
 }
 
 .dashContent {
-    border: 5px solid yellow;
-    grid-template-columns: 600px 200px;
-    grid-template-rows: 50px 550px;
+    background-color: lightgrey;
+    grid-column: 3 / end;
+    grid-row: 3 / end;
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(12, 1fr);
 }
 
-.contentLeft {
-    border: 5px solid green;
-    grid-template-columns: 250px 250px;
-    grid-template-rows: repeat(3, 175px);
+/*
+All divs with the sidebar
+*/
+
+.sidebarSVG {
+    grid-column: 1 / 3;
+    padding: 5px 15px;
+    
 }
 
-.projectsCont {
-    border: 5px solid orange;
-    grid-template-rows: 20px 100px 20px;
+.sidebarText {
+    grid-column: 3 / 6;
+    align-self: center;
 }
 
-.contentRight {
-    border: 5px solid blue;
-    grid-template-rows: 300px 60px 150px;
+.blankDivOne {
+    grid-column: 1 / 6;
+    grid-row: 2 / 3;
+    background-color: aliceblue;
 }
 
-.announceCont {
-    border: 5px solid red;
-    grid-template-rows: repeat(3, 100px);
+.blankDivTwo {
+    grid-column: 1 / 6;
+    grid-row: 9 / 10;
+    background-color: aliceblue;
 }
 
-.accouncement {
-    border: 5px solid orange;
-    grid-template-rows: repeat(2, 100px);
+/*
+All divs within the header
+*/
+
+.searchBar {
+    align-self: center;
+    border: 5px solid aliceblue;
+    border-radius: 11px;
+    align-items: center;
+    grid-column: 3 / 9;
+    grid-row: 2;
 }
 
-.trendingCont {
-    border: 5px solid green;
-    grid-template-columns: 50px 150px;
+.searchButton {
+    height: 25px;
+    width: 25px;
+}
+
+#searchButton {
+    background-color: white;
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.notify {
+    grid-column: 12;
+    grid-row: 2;
+    height: 25px;
+    width: auto;
+    justify-self: center;
+    align-self: center;
+}
+
+.smallProfilePhoto {
+    width: 50px;
+    height: auto;
+    border: 1px solid black;
+    border-radius: 100px;
+    grid-column: 14;
+    grid-row: 2;
+}
+
+.activeProfileName {
+    grid-column: 17;
+    grid-row: 2;
+}
+
+.profileContainer {
+    grid-column: 2 / 10;
+    grid-row: 4;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 2fr;
+}
+
+.largeProfilePhoto {
+    width: 70px;
+    height: auto;
+    border: 1px solid black;
+    border-radius: 100px;
+    grid-column: 1;
+    grid-row: 1 / end;
+}
+
+.greeting {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.profileGreeting {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.headerButtonContainer {
+    grid-column: 11 / 19;
+    grid-row: 4 / 5;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerButton {
+    background-color: lightblue;
+    border-radius: 35px;
+    height: 35px;
+}
+
+/*
+All divs within dashContent
+*/
+
+.projectsTitle {
+    grid-column: 1 / 11;
+    grid-row: 1;
+    align-self: center;
+}
+
+.projectsContainer {
+    background-color: aliceblue;
+    grid-column: 1 / 11;
+    grid-row: 2 / 12;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    padding: 15px;
+}
+
+.project {
+    background-color: white;
+}
+
+.newsTitle {
+    grid-column: 11 / 16;
+    grid-row: 1;
+    align-self: center;
+}
+
+.newsCont {
+    background-color: aqua;
+    grid-column: 11 / 16;
+    grid-row: 2 / 6;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1px;
+    padding: 5px;
+}
+
+.news {
+    background-color: white;
+}
+
+.trendingTitle {
+    grid-column: 11 / 16;
+    grid-row: 6;
+    align-self: center;
+}
+
+.trending {
+    background-color: beige;
+    grid-column: 11 / 16;
+    grid-row: 7 / 12;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 1px;
+    padding: 5px;
+}
+
+.userTrending {
+    background-color: lightblue;
 }
